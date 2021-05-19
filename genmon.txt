@@ -1,12 +1,12 @@
-/home/ych/.config/scripts/network-panel.sh
+/home/ych/.config/genmon/network-panel.sh
 5
 
-/home/ych/.config/scripts/cpu-panel.sh
+/home/ych/.config/genmon/cpu-panel.sh
 2
 
-/home/ych/.config/scripts/memory-panel.sh
+/home/ych/.config/genmon/memory-panel.sh
 2
 
-/home/ych/.config/scripts/disk-panel.sh
+/home/ych/.config/genmon/disk-panel.sh
 30
 
