@@ -28,7 +28,7 @@ else
   INFO+="<txt>"
 fi
 
-[[ "${GET_TEMP}" -gt 42 ]] && \
+[[ "${GET_TEMP}" -gt 48 ]] && \
   OVERHEAT=1 && \
     INFO+="<span weight='Bold' fgcolor='#FF5D5D'>"
 

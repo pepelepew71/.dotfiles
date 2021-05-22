@@ -116,10 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# -- my setup
 # path
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:~/bin
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11/lib64
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:~/bin:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-11/lib64
 
 # Powerline
 POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh
@@ -135,6 +135,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Input for QT
 export QT_IM_MODULE=ibus
+export GTK_IM_MODULE=ibus
 
 # tmux
 alias tmux='tmux -2'
