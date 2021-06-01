@@ -23,7 +23,6 @@ set nolist " dont show tailing space or tab
 set nowrap " no wrap
 
 "# gui
-set cursorline " highlight current line
 set t_Co=256 " support 256 colors
 set background=dark
 
