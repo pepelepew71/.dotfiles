@@ -1,8 +1,8 @@
-!  ____ _____ 
+!  ____ _____
 ! |  _ \_   _|  Derek Taylor (DistroTube)
 ! | | | || |    http://www.youtube.com/c/DistroTube
-! | |_| || |    http://www.gitlab.com/dwt1/ 
-! |____/ |_|  	
+! | |_| || |    http://www.gitlab.com/dwt1/
+! |____/ |_|
 
 
 Xft.dpi: 96
@@ -16,7 +16,7 @@ Xft.lcdfilter: lcdfilter
 XTerm*renderFont: true
 XTerm*faceName: xft:Monospace, \
                 xft:Monospace:size=12, \
-                xft:Monospace:style=Medium:size=12   
+                xft:Monospace:style=Medium:size=12
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true
@@ -25,88 +25,90 @@ XTerm.vt100.translations: #override \n\
   Ctrl <Key> j: smaller-vt-font() \n\
   Ctrl <Key> k: larger-vt-font()
 
-
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+! -- Every shell is a login shell by default (for inclusion of all necessary environment variables)
 XTerm*loginshell: true
 
-! I like a LOT of scrollback...
+! --  I like a LOT of scrollback...
 XTerm*savelines: 16384
 
-! double-click to select whole URLs :D
+! -- double-click to select whole URLs :D
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
 URxvt*imLocale: en_US.UTF-8
 URxvt*termName: rxvt-unicode-256color
 URxvt*buffered: false
 URxvt.intensityStyles: false
-URxvt.font: xft:Monospace:size=11, \
-            xft:Monospace:size=11, \
-            xft:Monospace:style=11   
-            ! xft:Monospace:style=Medium:size=11   
+URxvt.font: xft:Monospace:size=12, \
+            xft:Monospace:size=12, \
+            xft:Monospace:style=Medium:size=12
 URxvt.saveLines: 2000
 URxvt.scrollBar: false
 URxvt.cursorColor: white
 
-!! Extensions
-!URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard
+! -- Extensions
+URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard
 URxvt.colorUL: #4682B4
+
 !! url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
 URxvt.url-select.underline: true
+
 !! keyboard-select:
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
 !! resize-font
-URxvt.keysym.C-k:   font-size:increase
-URxvt.keysym.C-j:   font-size:decrease
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+
 !! Matcher
 URxvt.url-launcher:	urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
 URxvt.matcher.button: 1
-!!clipboard
+
+!! clipboard
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt*depth: 32
 
-! COLORS FOR SXIV
+! -- COLORS FOR SXIV
 Sxiv.foreground:   #bbc2cf
 Sxiv.background:   #282c34
 Sxiv.font: Ubuntu:style=bold:size=11
 
-
-! FOR ALL OTHER PROGRAMS USE XRESOURCES
-! This includes xterm and urxvt
+! -- FOR ALL OTHER PROGRAMS USE XRESOURCES, This includes xterm and urxvt
 *.foreground:   #bbc2cf
 *.background:   #282c34
 *.cursorColor:  #bbc2cf
 
-! black
+!! black
 *.color0:       #1c1f24
 *.color8:       #5b6268
 
-! red
+!! red
 *.color1:       #ff6c6b
 *.color9:       #da8548
 
-! green
+!! green
 *.color2:       #98be65
 *.color10:      #4db5bd
 
-! yellow
+!! yellow
 *.color3:       #da8548
 *.color11:      #ecbe7b
 
-! blue
+!! blue
 *.color4:       #51afef
 *.color12:      #3071db
 
-! magenta
+!! magenta
 *.color5:       #c678dd
 *.color13:      #a9a1e1
 
-! cyan
+!! cyan
 *.color6:       #5699af
 *.color14:      #46d9ff
 
-! white
+!! white
 *.color7:       #202328
 *.color15:      #dfdfdf

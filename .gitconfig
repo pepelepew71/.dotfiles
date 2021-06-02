@@ -1,9 +1,0 @@
-[user]
-	email = yc.huang71@gmail.com
-	name = yc.huang71
-[push]
-	default = simple
-[core]
-	editor = vim
-[pull]
-	rebase = false

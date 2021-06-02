@@ -58,4 +58,4 @@ fi
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 exec i3 &>> "$HOME/.log/i3.log"
-
+#exec i3

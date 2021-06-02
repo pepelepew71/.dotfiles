@@ -14,21 +14,22 @@ general {
     color_good      = '#88b090'
     color_degraded  = '#ccdc90'
     color_bad       = '#e89393'
+    output_format   = i3bar
 }
 
 order += "volume master"
 order += "disk /"
-#order += "disk /home"
+order += "disk /home"
 #order += "run_watch DHCP"
 #order += "ipv6"
 #order += "run_watch VPN"
-order += "battery 0"
+#order += "battery 0"
 #order += "cpu_temperature 0"
 order += "cpu_usage 0"
 order += "memory"
 #order += "load"
-order += "wireless wlp2s0"
-order += "ethernet enp0s31f6"
+#order += "wireless wlp2s0"
+order += "ethernet enp3s0"
 order += "tztime local"
 
 wireless wlp2s0 {
@@ -37,9 +38,9 @@ wireless wlp2s0 {
     format_down = ""
 }
 
-ethernet enp0s31f6 {
+ethernet enp3s0 {
     # -- if you use %speed, i3status requires root privileges
-    format_up = "Eth. %ip"
+    format_up = " Eth. %ip "
     format_down = ""
 }
 
@@ -61,19 +62,27 @@ cpu_temperature 0 {
 	format = " CPU %degrees°C "
 }
 
-disk "/" {
+disk / {
 	format = " Disk %avail "
 	prefix_type	= custom
 	low_threshold = 20
 	threshold_type = percentage_avail
 }
 
+disk /home {
+	format = " Home %avail "
+	prefix_type	= custom
+	low_threshold = 20
+	threshold_type = percentage_avail
+}
+
 volume master {
-    format = "Volume %volume "
+    format = " Volume %volume "
     format_muted = "Mute "
-    device = "default"
-    mixer = "Master"
-    mixer_idx = 0
+    device = "pulse:1"
+    #device = "default"
+    #mixer = "Master"
+    #mixer_idx = 0
 }
 
 tztime local {
