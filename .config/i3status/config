@@ -14,7 +14,7 @@ general {
     color_good      = '#88b090'
     color_degraded  = '#ccdc90'
     color_bad       = '#e89393'
-    output_format   = i3bar
+    output_format = i3bar
 }
 
 order += "volume master"
@@ -91,7 +91,7 @@ tztime local {
 
 memory {
     # format= " Free RAM: %available "
-    format= " Mem %available "
+    format= " MEM %available "
     threshold_degraded = "300M"
     format_degraded = " Free RAM: %available "
 }

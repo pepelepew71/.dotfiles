@@ -2,5 +2,5 @@
 
 rofi \
     -show drun \
-    -modi "drun,run,ssh" \
+    -modi "drun,window,run,ssh" \
     -show-icons 
