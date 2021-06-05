@@ -28,7 +28,7 @@ order += "disk /home"
 order += "cpu_usage 0"
 order += "memory"
 #order += "load"
-#order += "wireless wlp2s0"
+order += "wireless wlp2s0"
 order += "ethernet enp3s0"
 order += "tztime local"
 
@@ -63,7 +63,7 @@ cpu_temperature 0 {
 }
 
 disk / {
-	format = " Disk %avail "
+	format = " Root %avail "
 	prefix_type	= custom
 	low_threshold = 20
 	threshold_type = percentage_avail
@@ -78,9 +78,9 @@ disk /home {
 
 volume master {
     format = " Volume %volume "
-    format_muted = "Mute "
-    device = "pulse:1"
-    #device = "default"
+    format_muted = " Mute "
+    #device = "pulse:1"
+    device = "default"
     #mixer = "Master"
     #mixer_idx = 0
 }

@@ -25,7 +25,6 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export SCRIPT_DIR=($HOME/.config/i3blocks)
 
 # powerline
-#powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
