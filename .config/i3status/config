@@ -79,8 +79,8 @@ disk /home {
 volume master {
     format = " Volume %volume "
     format_muted = " Mute "
-    #device = "pulse:1"
-    device = "default"
+    device = "pulse:1"
+    #device = "default"
     #mixer = "Master"
     #mixer_idx = 0
 }

@@ -172,7 +172,7 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    status_command i3status
+    #status_command i3status
     status_command exec $HOME/.config/i3status/net-speed.sh
     tray_output primary
     output primary
@@ -186,7 +186,7 @@ bar {
 # -- my setup
 
 ## -- autostart
-exec_always --no-startup-id pulseaudio --start
+exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id ibus-daemon -x -d
@@ -206,7 +206,7 @@ set $indicator-color     #ff0000a0
 client.focused $border-color $bg-color $text-color $indicator-color
 
 ## -- change focus
-bindsym Mod1+Tab focus next
+bindsym $mod+Tab focus next
 
 ## -- remove titlebar
 default_border pixel 2
@@ -242,7 +242,7 @@ bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
 ### -- pavucontrol
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## -- key, shutdown, lock, logout, ...
 bindsym $mod+Pause mode "$mode_system"
