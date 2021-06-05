@@ -219,6 +219,10 @@ focus_follows_mouse no
 bindsym Mod1+Ctrl+Right workspace next
 bindsym Mod1+Ctrl+Left workspace prev
 
+## -- key, laptop monitor brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+
 ## -- key, others
 bindsym $mod+1 exec google-chrome-stable
 bindsym $mod+Shift+1 exec google-chrome-stable --incognito
@@ -278,6 +282,7 @@ for_window [class="Lxappearance"] floating enable border normal
 for_window [class="Arandr"] floating enable border normal
 for_window [class="Anki"] floating enable border normal
 for_window [class="realvnc-vncviewer"] floating enable border normal
+for_window [class="Nm-connection-editor"] floating enable border normal
 for_window [title="^dbg"] floating enable border normal
 for_window [title="File Operation Progress"] floating enable move scratchpad
 
