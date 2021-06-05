@@ -231,6 +231,7 @@ bindsym $mod+3 exec gedit --new-window
 bindsym Mod1+F2 exec $HOME/bin/my-rofi.sh
 bindsym $mod+8 exec $HOME/bin/my-chrome-work.sh
 bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
+bindsym XF86Calculator exec galculator
 
 ## -- key, sound, use alsamixer, make sure rebooting after install
 
@@ -242,7 +243,7 @@ bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
 ### -- pavucontrol
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## -- key, shutdown, lock, logout, ...
 bindsym $mod+Pause mode "$mode_system"
