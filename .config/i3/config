@@ -185,6 +185,19 @@ bar {
 
 # -- my setup
 
+## -- autostart
+exec_always --no-startup-id pulseaudio --start
+exec_always --no-startup-id touchpad-indicator
+exec --no-startup-id urxvtd -q -o -f
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id ibus-daemon -x -d
+exec --no-startup-id redshift-gtk
+exec --no-startup-id picom -b
+exec --no-startup-id powerline-daemon -q
+exec --no-startup-id pnmixer
+exec --no-startup-id nm-applet
+exec --no-startup-id $HOME/.screenlayout/one-dell.sh
+
 ## -- color
 set $border-color        #11111100
 set $bg-color            #ffffff99
@@ -195,18 +208,6 @@ client.focused $border-color $bg-color $text-color $indicator-color
 
 ## -- change focus
 bindsym Mod1+Tab focus next
-
-## -- autostart
-exec_always --no-startup-id pulseaudio --start
-exec --no-startup-id urxvtd -q -o -f
-exec --no-startup-id .screenlayout/one-dell.sh
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id ibus-daemon -x -d
-exec --no-startup-id redshift-gtk
-exec --no-startup-id picom -b
-exec --no-startup-id powerline-daemon -q
-exec --no-startup-id pnmixer
-exec --no-startup-id nm-applet
 
 ## -- remove titlebar
 default_border pixel 2
@@ -220,8 +221,8 @@ bindsym Mod1+Ctrl+Right workspace next
 bindsym Mod1+Ctrl+Left workspace prev
 
 ## -- key, laptop monitor brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 ## -- key, others
 bindsym $mod+1 exec google-chrome-stable
