@@ -196,6 +196,7 @@ exec --no-startup-id powerline-daemon -q
 exec --no-startup-id pnmixer
 exec --no-startup-id nm-applet
 exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
+exec --no-startup-id flameshot
 
 ## -- color
 set $border-color        #11111100
@@ -213,7 +214,7 @@ default_border pixel 2
 default_floating_border pixel 1
 
 ## -- mouse
-focus_follows_mouse no
+focus_follows_mouse yes
 
 ## -- key, switch workspace
 bindsym Mod1+Ctrl+Right workspace next
@@ -232,6 +233,7 @@ bindsym Mod1+F2 exec $HOME/bin/my-rofi.sh
 bindsym $mod+8 exec $HOME/bin/my-chrome-work.sh
 bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
 bindsym XF86Calculator exec galculator
+bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
 
 ## -- key, sound, use alsamixer, make sure rebooting after install
 
@@ -286,6 +288,7 @@ for_window [class="Arandr"] floating enable border normal
 for_window [class="Anki"] floating enable border normal
 for_window [class="realvnc-vncviewer"] floating enable border normal
 for_window [class="Nm-connection-editor"] floating enable border normal
+for_window [class="Steam"] floating enable border normal
 
 ## -- dual monitor
 
