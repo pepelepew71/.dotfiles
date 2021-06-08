@@ -234,6 +234,7 @@ bindsym $mod+8 exec $HOME/bin/my-chrome-work.sh
 bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
 bindsym XF86Calculator exec galculator
 bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
+bindsym Control+Print exec flameshot gui
 
 ## -- key, sound, use alsamixer, make sure rebooting after install
 
@@ -289,6 +290,7 @@ for_window [class="Anki"] floating enable border normal
 for_window [class="realvnc-vncviewer"] floating enable border normal
 for_window [class="Nm-connection-editor"] floating enable border normal
 for_window [class="Steam"] floating enable border normal
+for_window [class="VirtualBox Manager"] floating enable border normal
 
 ## -- dual monitor
 
