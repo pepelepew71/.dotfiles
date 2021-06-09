@@ -11,7 +11,7 @@ Xft.lcdfilter: lcdfilter
 XTerm*renderFont: true
 XTerm*faceName: xft:Monospace, \
                 xft:Monospace:size=12, \
-                xft:Monospace:style=Medium:size=12   
+                xft:Monospace:style=Medium:size=12
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true
@@ -101,4 +101,3 @@ URxvt.keysym.C-equal:     resize-font:reset
 !!! -- Matcher
 URxvt.url-launcher:	urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
 URxvt.matcher.button: 1
-
