@@ -79,4 +79,3 @@ nnoremap <F10> :set autoindent! cindent! smartindent!<cr>
 
 "## disable Q keybind to ex mode
 nnoremap Q <Nop>
-
