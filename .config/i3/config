@@ -32,6 +32,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec urxvtc
+bindsym $mod+KP_Enter exec urxvtc
 
 # kill focused window
 #bindsym $mod+Shift+q kill
@@ -185,19 +186,6 @@ bar {
 
 # -- my setup
 
-## -- autostart
-exec --no-startup-id start-pulseaudio-x11
-exec --no-startup-id urxvtd -q -o -f
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id ibus-daemon -x -d
-exec --no-startup-id redshift-gtk
-exec --no-startup-id picom -b
-exec --no-startup-id powerline-daemon -q
-exec --no-startup-id pnmixer
-exec --no-startup-id nm-applet
-exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
-exec --no-startup-id flameshot
-
 ## -- color
 set $border-color        #11111100
 set $bg-color            #ffffff99
@@ -206,10 +194,33 @@ set $indicator-color     #ff0000a0
 
 client.focused $border-color $bg-color $text-color $indicator-color
 
+## -- autostart
+
+### -- daemon
+exec --no-startup-id urxvtd -q -o -f
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id picom -b
+
+### -- tray applet
+exec --no-startup-id nm-applet
+exec --no-startup-id flameshot
+exec --no-startup-id ibus-daemon -x -d
+exec --no-startup-id redshift-gtk
+
+### -- multi-media
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id pnmixer
+
+### -- monitor
+exec --no-startup-id $HOME/.screenlayout/xeon-one.sh
+#exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
+#exec --no-startup-id $HOME/.screenlayout/dell-one.sh
+#exec --no-startup-id $HOME/.screenlayout/dell-dual.sh
+
 ## -- change focus
 bindsym $mod+Tab focus next
 
-## -- remove titlebar
+## -- remove titlebar when tiling
 default_border pixel 2
 default_floating_border pixel 2
 
@@ -229,9 +240,10 @@ bindsym $mod+1 exec google-chrome-stable
 bindsym $mod+Shift+1 exec google-chrome-stable --incognito
 bindsym $mod+2 exec thunar
 bindsym $mod+3 exec gedit --new-window
-bindsym Mod1+F2 exec $HOME/bin/my-rofi.sh
-bindsym $mod+8 exec $HOME/bin/my-chrome-work.sh
-bindsym $mod+9 exec $HOME/bin/my-chrome-chat.sh
+bindsym $mod+8 exec $HOME/bin/chrome-work.sh
+bindsym $mod+9 exec $HOME/bin/chrome-chat.sh
+bindsym Mod1+F1 exec $HOME/bin/rofi-window.sh
+bindsym Mod1+F2 exec $HOME/bin/rofi-drun.sh
 bindsym XF86Calculator exec galculator
 bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
 bindsym Control+Print exec flameshot gui
@@ -268,7 +280,7 @@ mode "$mode_system" {
 
 set $Locker i3lock && sleep 1
 
-## -- i3 gaps
+## -- gaps
 gaps inner 8
 
 ## -- floating window
@@ -295,17 +307,18 @@ for_window [class="VirtualBox Manager"] floating enable border normal
 ## -- dual monitor
 
 ### -- key
-bindsym Mod1+Ctrl+Shift+Right move container to output primary; focus output primary
-bindsym Mod1+Ctrl+Shift+Left move container to output HDMI-0; focus output HDMI-0
+#bindsym Mod1+Ctrl+Shift+Right move container to output primary; focus output primary
+#bindsym Mod1+Ctrl+Shift+Left move container to output HDMI-0; focus output HDMI-0
 
 ### -- assign workspace to monitor
-workspace $ws1 output primary
-workspace $ws2 output primary
-workspace $ws3 output primary
-workspace $ws4 output primary
-workspace $ws5 output primary
-workspace $ws6 output primary
-workspace $ws7 output primary
-workspace $ws8 output primary
-workspace $ws9 output primary
-workspace $ws10 output HDMI-0
+#workspace $ws1 output primary
+#workspace $ws2 output primary
+#workspace $ws3 output primary
+#workspace $ws4 output primary
+#workspace $ws5 output primary
+#workspace $ws6 output primary
+#workspace $ws7 output primary
+#workspace $ws8 output primary
+#workspace $ws9 output primary
+#workspace $ws10 output HDMI-0
+
