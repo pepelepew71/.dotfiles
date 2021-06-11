@@ -196,6 +196,12 @@ client.focused $border-color $bg-color $text-color $indicator-color
 
 ## -- autostart
 
+### -- monitor
+#exec --no-startup-id $HOME/.screenlayout/xeon-one.sh
+#exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
+#exec --no-startup-id $HOME/.screenlayout/dell-one.sh
+#exec --no-startup-id $HOME/.screenlayout/dell-dual.sh
+
 ### -- daemon
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id nitrogen --restore
@@ -210,12 +216,6 @@ exec --no-startup-id redshift-gtk
 ### -- multi-media
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pnmixer
-
-### -- monitor
-exec --no-startup-id $HOME/.screenlayout/xeon-one.sh
-#exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
-#exec --no-startup-id $HOME/.screenlayout/dell-one.sh
-#exec --no-startup-id $HOME/.screenlayout/dell-dual.sh
 
 ## -- change focus
 bindsym $mod+Tab focus next
@@ -242,7 +242,7 @@ bindsym $mod+2 exec thunar
 bindsym $mod+3 exec gedit --new-window
 bindsym $mod+8 exec $HOME/bin/chrome-work.sh
 bindsym $mod+9 exec $HOME/bin/chrome-chat.sh
-bindsym Mod1+F1 exec $HOME/bin/rofi-window.sh
+bindsym Mod1+Tab exec $HOME/bin/rofi-window.sh
 bindsym Mod1+F2 exec $HOME/bin/rofi-drun.sh
 bindsym XF86Calculator exec galculator
 bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
@@ -303,22 +303,24 @@ for_window [class="realvnc-vncviewer"] floating enable border normal
 for_window [class="Nm-connection-editor"] floating enable border normal
 for_window [class="Steam"] floating enable border normal
 for_window [class="VirtualBox Manager"] floating enable border normal
+for_window [class="VirtualBox Machine"] floating enable border normal
+for_window [class="obs"] floating enable border normal
 
 ## -- dual monitor
 
 ### -- key
-#bindsym Mod1+Ctrl+Shift+Right move container to output primary; focus output primary
-#bindsym Mod1+Ctrl+Shift+Left move container to output HDMI-0; focus output HDMI-0
+bindsym Mod1+Ctrl+Shift+Right move container to output primary; focus output primary
+bindsym Mod1+Ctrl+Shift+Left move container to output HDMI-0; focus output HDMI-0
 
 ### -- assign workspace to monitor
-#workspace $ws1 output primary
-#workspace $ws2 output primary
-#workspace $ws3 output primary
-#workspace $ws4 output primary
-#workspace $ws5 output primary
-#workspace $ws6 output primary
-#workspace $ws7 output primary
-#workspace $ws8 output primary
-#workspace $ws9 output primary
-#workspace $ws10 output HDMI-0
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output primary
+workspace $ws7 output primary
+workspace $ws8 output primary
+workspace $ws9 output primary
+workspace $ws10 output HDMI-0
 
