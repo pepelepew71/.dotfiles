@@ -25,6 +25,7 @@ cp ~/.config/Thunar/uca.xml ./.config/Thunar
 cp ~/.config/i3/config ./.config/i3
 cp ~/.config/pnmixer/config ./.config/pnmixer
 cp ~/.config/i3status/* ./.config/i3status
+cp ~/.config/copyq/copyq.conf ./.config/copyq
 cp ~/.config/rofi ./.config -r
 
 # -- script

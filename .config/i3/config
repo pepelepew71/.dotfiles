@@ -243,14 +243,11 @@ bindsym $mod+2 exec thunar
 bindsym $mod+3 exec gedit --new-window
 bindsym $mod+8 exec $HOME/bin/chrome-work.sh
 bindsym $mod+9 exec $HOME/bin/chrome-chat.sh
-bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
-
 bindsym XF86Calculator exec galculator
-
+bindsym $mod+F12 exec $HOME/bin/random-wallpaper.sh
 bindsym Print exec shutter -f --min_at_startup
 bindsym Control+Print exec shutter -s --min_at_startup
 bindsym Shift+Print exec shutter -a --min_at_startup
-
 bindsym Mod1+Tab exec $HOME/bin/rofi-window.sh
 bindsym Mod1+F1 exec $HOME/bin/rofi-window.sh
 bindsym Mod1+F2 exec $HOME/bin/rofi-drun.sh
