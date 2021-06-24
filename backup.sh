@@ -9,9 +9,9 @@ cp ~/.profile ./
 cp ~/.bash_profile ./
 cp ~/.bashrc ./
 
-cp ~/.zshrc ./
-cp ~/.zshenv ./
-cp ~/.zprofile ./
+#cp ~/.zshrc ./
+#cp ~/.zshenv ./
+#cp ~/.zprofile ./
 
 # -- setup
 cp ~/.vimrc ./

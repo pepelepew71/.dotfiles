@@ -36,9 +36,9 @@ URxvt.cursorColor: white
 !URxvt.shading:      20
 
 !! -- font
-URxvt*font: xft:Monospace:size=12, \
-            xft:Inconsolata Nerd Font Mono:size=12, \
-            xft:Monospace:size=12
+URxvt*font: xft:FiraCode Nerd Font:size=12, \
+            xft:FiraCode Nerd Font:size=12, \
+            xft:FiraCode Nerd Font:size=12
 URxvt*letterSpace: 0
 
 !! -- color theme

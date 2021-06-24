@@ -180,6 +180,7 @@ bar {
     tray_output primary
     output primary
     position top
+
     # -- disable mouse rolling to change workspace
     bindsym button4 nop
     bindsym button5 nop
@@ -192,7 +193,6 @@ set $border-color        #11111100
 set $bg-color            #ffffff99
 set $text-color          #4c789990
 set $indicator-color     #ff0000a0
-
 client.focused $border-color $bg-color $text-color $indicator-color
 
 ## -- autostart
