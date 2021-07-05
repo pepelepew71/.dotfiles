@@ -8,6 +8,8 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+neofetch
+
 # -- path
 export PATH=$PATH:$HOME/bin
 
