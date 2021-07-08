@@ -2,9 +2,9 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=ibus-daemon
+Name=pnmixer
 Comment=
-Exec=ibus-daemon -x -d
+Exec=pnmixer
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false

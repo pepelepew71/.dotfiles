@@ -199,14 +199,15 @@ client.focused $border-color $bg-color $text-color $indicator-color
 
 ### -- monitor
 #exec --no-startup-id $HOME/.screenlayout/xeon-one.sh
-exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
+#exec --no-startup-id $HOME/.screenlayout/ryzen-dual.sh
+#exec --no-startup-id $HOME/.screenlayout/ryzen-one.sh
 #exec --no-startup-id $HOME/.screenlayout/dell-one.sh
 #exec --no-startup-id $HOME/.screenlayout/dell-dual.sh
 
 ### -- daemon
 exec --no-startup-id urxvtd -q -o -f
-exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -b
+exec --no-startup-id feh --randomize --bg-fill /home/ych/wallpapers/street_light/*
 
 ### -- tray applet
 exec --no-startup-id nm-applet
@@ -263,9 +264,9 @@ bindsym Mod1+F3 exec copyq show
 #bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 ### -- pavucontrol
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## -- key, shutdown, lock, logout, ...
 bindsym $mod+Pause mode "$mode_system"
