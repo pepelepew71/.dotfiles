@@ -60,6 +60,7 @@
       <property name="&lt;Alt&gt;grave" type="string" value="/home/ych/bin/rofi-window.sh"/>
       <property name="&lt;Shift&gt;Print" type="string" value="shutter -a --min_at_startup"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
+      <property name="&lt;Super&gt;Pause" type="string" value="xfce4-session-logout"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
