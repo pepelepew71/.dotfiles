@@ -36,4 +36,6 @@ fi
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 #exec i3 &>> "$HOME/.i3.log"
-exec startxfce4 &>> "$HOME/.xfce4.log"
+#exec i3
+#exec startxfce4 &>> "$HOME/.xfce4.log"
+exec startxfce4

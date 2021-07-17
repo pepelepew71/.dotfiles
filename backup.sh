@@ -19,6 +19,7 @@ cp ~/.screenlayout/* ./.screenlayout
 cp ~/.urxvt/ext/* ./.urxvt/ext
 
 # -- config
+cp ~/.config/starship.toml ./.config
 cp ~/.config/redshift.conf ./.config
 cp ~/.config/picom.conf ./.config
 cp ~/.config/Thunar/uca.xml ./.config/Thunar
@@ -29,4 +30,4 @@ cp ~/.config/copyq/copyq.conf ./.config/copyq
 cp ~/.config/rofi ./.config -r
 
 # -- script
-cp ~/bin/* ./bin
+cp ~/bin/* ./bin -r
