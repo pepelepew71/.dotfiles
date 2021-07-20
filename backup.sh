@@ -22,6 +22,7 @@ cp ~/.urxvt/ext/* ./.urxvt/ext
 cp ~/.config/starship.toml ./.config
 cp ~/.config/redshift.conf ./.config
 cp ~/.config/picom.conf ./.config
+cp ~/.config/conky/conky.conf ./.config/conky
 cp ~/.config/Thunar/uca.xml ./.config/Thunar
 cp ~/.config/i3/config ./.config/i3
 cp ~/.config/pnmixer/config ./.config/pnmixer
