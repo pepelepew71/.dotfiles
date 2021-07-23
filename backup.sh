@@ -28,6 +28,7 @@ cp ~/.config/i3/config ./.config/i3
 cp ~/.config/pnmixer/config ./.config/pnmixer
 cp ~/.config/i3status/* ./.config/i3status
 cp ~/.config/copyq/copyq.conf ./.config/copyq
+cp ~/.config/tint2/tint2rc ./.config/tint2
 cp ~/.config/rofi ./.config -r
 
 # -- script
