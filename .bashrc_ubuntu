@@ -116,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# trash-rm
+alias rm="trash-rm"
+
+# -- path
+export PATH=$PATH:$HOME/bin
+
 # ibus-chewing
 export QT_IM_MODULE=ibus
 export GTK_IM_MODULE=ibus
@@ -131,4 +137,9 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+# ros2
+source /opt/ros/foxy/setup.bash
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+source /home/ych/ros2_ws/install/setup.bash
 
