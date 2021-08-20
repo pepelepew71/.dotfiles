@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-sleep 10
-
+killall conky
+sleep 5
 conky
 
