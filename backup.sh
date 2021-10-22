@@ -32,4 +32,4 @@ cp ~/.config/tint2/tint2rc ./.config/tint2
 cp ~/.config/rofi ./.config -r
 
 # -- script
-cp ~/bin/* ./bin -r
+cp ~/scripts/* ./scripts -r

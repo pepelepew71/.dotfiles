@@ -1,41 +1,11 @@
 #!/bin/sh
 
-userresources=$HOME/.Xresources
-usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
-sysmodmap=/etc/X11/xinit/.Xmodmap
+# /etc/X11/xinit/xinitrc
+#
+# global xinitrc file, used by all X sessions started by xinit (startx)
 
-# merge in defaults and keymaps
+# invoke global X session script
+#. /etc/X11/Xsession
+# automatically run startx when logging in on tty1
+startxfce4
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
-fi
-
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
-fi
-
-if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
-fi
-
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
-fi
-
-# start some nice programs
-
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
-fi
-
-# i3 with nvidia-driver
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
-#exec i3 &>> "$HOME/.i3.log"
-#exec i3
-#exec startxfce4 &>> "$HOME/.xfce4.log"
-exec startxfce4
