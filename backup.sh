@@ -1,18 +1,5 @@
 #!/usr/bin/env bash
 
-# -- X11
-cp ~/.Xresources ./
-cp ~/.xinitrc ./
-cp ~/.profile ./
-
-# -- shell
-cp ~/.bash_profile ./
-cp ~/.bashrc ./
-
-#cp ~/.zshrc ./
-#cp ~/.zshenv ./
-#cp ~/.zprofile ./
-
 # -- setup
 cp ~/.vimrc ./
 cp ~/.screenlayout/* ./.screenlayout
@@ -33,3 +20,4 @@ cp ~/.config/rofi ./.config -r
 
 # -- script
 cp ~/scripts/* ./scripts -r
+
