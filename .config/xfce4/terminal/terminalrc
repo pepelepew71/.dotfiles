@@ -1,4 +1,5 @@
 [Configuration]
+FontName=DejaVu Sans Mono 12
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -29,6 +30,4 @@ MiscShowUnsafePasteDialog=TRUE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.800000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-DropdownWidth=70
-FontName=FiraMono Nerd Font 11
 
