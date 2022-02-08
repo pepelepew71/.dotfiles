@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx-Citrus</name>
+    <name>Triste-Crimson</name>
     <titleLayout>LMIC</titleLayout>
     <!-- <name>Clearlooks</name>
     <titleLayout>NLIMC</titleLayout> -->
@@ -86,12 +86,12 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans Serif</name>
+      <size>11</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
@@ -247,6 +247,15 @@
     <keybind key="W-Home">
       <action name="Execute">
         <command>move-to-next-monitor.sh</command>
+      </action>
+    </keybind>
+    <!-- openbox related -->
+    <keybind key="W-F11">
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="W-space">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
       </action>
     </keybind>
     <!-- Tiling Windows -->

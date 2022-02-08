@@ -8,3 +8,4 @@
 (sleep 2s && volumeicon) &
 (sleep 2s && /home/ych/scripts/start-conky.sh) &
 (sleep 2s && redshift) &
+(sleep 2s && xscreensaver -nosplash) &

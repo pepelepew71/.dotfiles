@@ -30,12 +30,13 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 
     #          COMMAND                 LABEL              ICON
-    {item => ['spacefm .',        'File Manager', 'system-file-manager']},
+    {item => ['pcmanfm .',        'File Manager', 'system-file-manager']},
     {item => ['alacritty',        'Terminal',     'utilities-terminal']},
     {item => ['xdg-open http://', 'Web Browser',  'web-browser']},
     # {item => ['/home/ych/scripts/rofi-window.sh',   'Run command',  'system-run']},
 
-    {sep => 'Categories'},
+    # {sep => 'Categories'},
+    {sep => undef},
 
     #          NAME            LABEL                ICON
     {cat => ['utility',     'Accessories', 'applications-utilities']},
