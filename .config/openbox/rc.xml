@@ -180,6 +180,7 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
     <!-- my app keybind -->
     <keybind key="W-KP_Enter">
       <action name="Execute">
@@ -249,6 +250,12 @@
         <command>move-to-next-monitor.sh</command>
       </action>
     </keybind>
+    <keybind key="C-A-Delete">
+      <action name="Execute">
+        <command>oblogout</command>
+      </action>
+    </keybind>
+
     <!-- openbox related -->
     <keybind key="W-F11">
       <action name="Reconfigure"/>
@@ -258,6 +265,7 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
+
     <!-- Tiling Windows -->
     <keybind key="W-A-KP_7">
       <action name="UnmaximizeFull"/>
@@ -469,6 +477,7 @@
     <keybind key="W-Delete">
       <action name="Move"/>
     </keybind>
+
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
@@ -541,6 +550,7 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+
     <!-- Keybindings for windows -->
     <!-- <keybind key="A-F4">
       <action name="Close"/>
@@ -1071,5 +1081,11 @@
 
   # end of the example
 -->
+    <application class="oblogout">
+      <position force="yes">
+        <monitor>1</monitor>
+      </position>
+      <fullscreen>yes</fullscreen>
+    </application>
   </applications>
 </openbox_config>
