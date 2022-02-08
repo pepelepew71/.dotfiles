@@ -7,7 +7,7 @@
 # ===========================================================
 
 # Open Weather Map API code, register to http://openweathermap.org to get one :
-API_KEY=""
+API_KEY="f6853011e20f4063f8808bcc74e25b84"
 
 # Check on http://openweathermap.org/find :
 CITY_ID="1668341"

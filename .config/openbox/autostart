@@ -1,0 +1,10 @@
+/home/ych/.screenlayout/default.sh &
+(sleep 2s && start-pulseaudio-x11) &
+(sleep 2s && tint2 -c /home/ych/.config/tint2/tint2rc) &
+(sleep 2s && picom --experimental-backends) &
+(sleep 2s && nitrogen --restore) &
+(sleep 2s && ibus-daemon -x -d) &
+(sleep 2s && nm-applet) &
+(sleep 2s && volumeicon) &
+(sleep 2s && /home/ych/scripts/start-conky.sh) &
+(sleep 2s && redshift) &

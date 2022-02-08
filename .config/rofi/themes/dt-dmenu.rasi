@@ -10,8 +10,8 @@
     border-color:               #282c34;
     text-color:                 #bbc2cf;
     height:                     20px;
-    font:                       "SauceCodePro Nerd Font Mono 12";
-    prompt-font:                "Ubuntu Bold 12";
+    font:                       "SauceCodePro Nerd Font Mono 9";
+    prompt-font:                "Ubuntu Bold 9";
     prompt-background:          #51afef;
     prompt-foreground:          #282c34;
     prompt-padding:             2px;
@@ -51,3 +51,16 @@
     background-color: @selected-normal-background;
     text-color:       @selected-normal-foreground;
 }
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+/* Not actually relevant for this configuration, but it might
+be useful to someone having issues with their icons' background color
+
+element-icon {
+    background-color: inherit;
+}
+*/
