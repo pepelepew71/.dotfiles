@@ -161,7 +161,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>BottomRight</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -180,21 +180,20 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
     <!-- my app keybind -->
     <keybind key="W-KP_Enter">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="A-F2">
@@ -222,7 +221,7 @@
     </keybind>
     <keybind key="W-3">
       <action name="Execute">
-        <command>gedit --new-window</command>
+        <command>mousepad</command>
       </action>
     </keybind>
     <keybind key="W-8">
@@ -255,7 +254,6 @@
         <command>oblogout</command>
       </action>
     </keybind>
-
     <!-- openbox related -->
     <keybind key="W-F11">
       <action name="Reconfigure"/>
@@ -265,7 +263,11 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-
+    <keybind key="W-x">
+      <action name="Exit">
+        <prompt>yes</prompt>
+      </action>
+    </keybind>
     <!-- Tiling Windows -->
     <keybind key="W-A-KP_7">
       <action name="UnmaximizeFull"/>
@@ -457,18 +459,18 @@
       <action name="UnmaximizeFull"/>
       <action name="ResizeRelative">
         <bottom>10</bottom>
-        <left>10</left>
-        <right>10</right>
         <top>10</top>
+        <left>20</left>
+        <right>20</right>
       </action>
     </keybind>
     <keybind key="W-S-Down">
       <action name="UnmaximizeFull"/>
       <action name="ResizeRelative">
         <bottom>-10</bottom>
-        <left>-10</left>
-        <right>-10</right>
         <top>-10</top>
+        <left>-20</left>
+        <right>-20</right>
       </action>
     </keybind>
     <keybind key="W-End">
@@ -477,7 +479,6 @@
     <keybind key="W-Delete">
       <action name="Move"/>
     </keybind>
-
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
@@ -550,7 +551,6 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-
     <!-- Keybindings for windows -->
     <!-- <keybind key="A-F4">
       <action name="Close"/>

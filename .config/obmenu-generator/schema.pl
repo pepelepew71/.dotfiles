@@ -31,7 +31,7 @@ our $SCHEMA = [
 
     #          COMMAND                 LABEL              ICON
     {item => ['pcmanfm .',        'File Manager', 'system-file-manager']},
-    {item => ['alacritty',        'Terminal',     'utilities-terminal']},
+    {item => ['xfce4-terminal',   'Terminal',     'utilities-terminal']},
     {item => ['xdg-open http://', 'Web Browser',  'web-browser']},
     # {item => ['/home/ych/scripts/rofi-window.sh',   'Run command',  'system-run']},
 
