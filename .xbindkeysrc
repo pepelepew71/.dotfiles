@@ -74,6 +74,22 @@
     m:0x50 + c:84
     Mod2+Mod4 + KP_Begin
 
+"(wmctrl -s 0)"
+    m:0x18 + c:10
+    Alt+Mod2 + 1
+
+"(wmctrl -s 1)"
+    m:0x18 + c:11
+    Alt+Mod2 + 2
+
+"(wmctrl -s 2)"
+    m:0x18 + c:12
+    Alt+Mod2 + 3
+
+"(wmctrl -s 3)"
+    m:0x18 + c:13
+    Alt+Mod2 + 4
+
 # set directly keycode (here control + f with my keyboard)
 #"xterm"
 #  c:41 + m:0x4
