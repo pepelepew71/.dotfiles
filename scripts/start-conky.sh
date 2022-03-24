@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-## Wait 10 seconds
+killall conky
+
+## Wait
 sleep 5
 
 ## Run conky
