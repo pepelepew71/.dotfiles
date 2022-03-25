@@ -90,6 +90,38 @@
     m:0x18 + c:13
     Alt+Mod2 + 4
 
+"xfce4-settings-manager"
+    m:0x50 + c:39
+    Mod2+Mod4 + s
+
+"/usr/bin/xfce4-popup-applicationsmenu"
+    m:0x50 + c:65
+    Mod2+Mod4 + space
+
+"galculator"
+    m:0x10 + c:148
+    Mod2 + XF86Calculator
+
+"flameshot gui"
+    m:0x14 + c:107
+    Control+Mod2 + Print
+    
+"flameshot full -p /home/ych//Pictures"
+    m:0x10 + c:107
+    Mod2 + Print
+
+"xfce4-terminal"
+    m:0x1c + c:28
+    Control+Alt+Mod2 + t
+
+"xfce4-terminal"
+    m:0x50 + c:36
+    Mod2+Mod4 + Return
+
+"xfce4-terminal"
+    m:0x50 + c:104
+    Mod2+Mod4 + KP_Enter
+    
 # set directly keycode (here control + f with my keyboard)
 #"xterm"
 #  c:41 + m:0x4
