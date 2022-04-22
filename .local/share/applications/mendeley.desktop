@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Mendeley
+Exec=/home/ych/scripts/mendeley.sh
+Icon=atom
+NoDisplay=false
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;

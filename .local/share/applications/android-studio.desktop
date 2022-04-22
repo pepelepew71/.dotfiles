@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Andriod Studio
+Exec=/home/ych/bin/android-studio-2021.1.1.22-linux/android-studio/bin/studio.sh
+Icon=atom
+NoDisplay=false
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;
