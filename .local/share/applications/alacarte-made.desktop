@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Thunar
+Exec=thunar
+Comment=
+Terminal=false
+Icon=gnome-panel-launcher
+Type=Application

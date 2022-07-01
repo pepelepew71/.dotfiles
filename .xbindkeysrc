@@ -110,7 +110,7 @@
     m:0x14 + c:107
     Control+Mod2 + Print
 
-"flameshot full -p /home/ych//Pictures"
+"flameshot screen -n 0 -p /home/ych/Pictures"
     m:0x10 + c:107
     Mod2 + Print
 
