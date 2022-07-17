@@ -181,74 +181,6 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- my app keybind -->
-    <keybind key="W-KP_Enter">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-t">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-      </action>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="Execute">
-        <command>rofi-drun.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="W-1">
-      <action name="Execute">
-        <command>google-chrome-stable</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-1">
-      <action name="Execute">
-        <command>google-chrome-stable --incognito</command>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="Execute">
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <keybind key="W-3">
-      <action name="Execute">
-        <command>mousepad</command>
-      </action>
-    </keybind>
-    <keybind key="W-8">
-      <action name="Execute">
-        <command>chrome-work.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-9">
-      <action name="Execute">
-        <command>chrome-chat.sh</command>
-      </action>
-    </keybind>
-    <keybind key="S-Print">
-      <action name="Execute">
-        <command>shutter -a --min_at_startup</command>
-      </action>
-    </keybind>
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>shutter -s --min_at_startup</command>
-      </action>
-    </keybind>
-    <keybind key="W-Home">
-      <action name="Execute">
-        <command>move-to-next-monitor.sh</command>
-      </action>
-    </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
         <command>oblogout</command>
@@ -527,7 +459,7 @@
         <to>down</to>
         <wrap>no</wrap>
       </action>
-    </keybind> -->
+    </keybind>
     <keybind key="A-1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -550,7 +482,7 @@
     </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
-    </keybind>
+    </keybind> -->
     <!-- Keybindings for windows -->
     <!-- <keybind key="A-F4">
       <action name="Close"/>
@@ -663,6 +595,7 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
+      <!--
       <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
@@ -693,6 +626,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      -->
     </context>
     <context name="Titlebar">
       <mousebind button="Left" action="Drag">
