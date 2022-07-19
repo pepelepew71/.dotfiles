@@ -42,10 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Triste-Crimson</name>
-    <titleLayout>LMIC</titleLayout>
-    <!-- <name>Clearlooks</name>
-    <titleLayout>NLIMC</titleLayout> -->
+    <name>Triste-Orange</name>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -56,24 +54,24 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -86,12 +84,12 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Sans Serif</name>
-      <size>11</size>
+      <name>sans</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
@@ -130,7 +128,7 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -161,7 +159,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>BottomRight</position>
+    <position>TopLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -180,237 +178,6 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <!-- my app keybind -->
-    <keybind key="C-A-Delete">
-      <action name="Execute">
-        <command>oblogout</command>
-      </action>
-    </keybind>
-    <!-- openbox related -->
-    <keybind key="W-F11">
-      <action name="Reconfigure"/>
-    </keybind>
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Exit">
-        <prompt>yes</prompt>
-      </action>
-    </keybind>
-    <!-- Tiling Windows -->
-    <keybind key="W-A-KP_7">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_8">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_9">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_4">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_5">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>center</x>
-        <y>center</y>
-        <width>95%</width>
-        <height>95%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_7">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_8">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>0%</y>
-        <width>34%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_9">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_4">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_5">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>33%</y>
-        <width>34%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>67%</y>
-        <width>34%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="MaximizeFull"/>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="UnmaximizeFull"/>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>0</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>-0</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="UnmaximizeFull"/>
-      <action name="ResizeRelative">
-        <bottom>10</bottom>
-        <top>10</top>
-        <left>20</left>
-        <right>20</right>
-      </action>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="ResizeRelative">
-        <bottom>-10</bottom>
-        <top>-10</top>
-        <left>-20</left>
-        <right>-20</right>
-      </action>
-    </keybind>
-    <keybind key="W-End">
-      <action name="Resize"/>
-    </keybind>
-    <keybind key="W-Delete">
-      <action name="Move"/>
-    </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
@@ -424,18 +191,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <!-- <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind> -->
     <keybind key="C-S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -448,45 +203,10 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <!-- <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="A-1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="A-2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="A-3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="A-4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
-    </keybind> -->
+    </keybind>
     <!-- Keybindings for windows -->
-    <!-- <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind> -->
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
@@ -516,7 +236,7 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- <keybind key="C-A-Tab">
+    <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
         <desktop>yes</desktop>
@@ -526,9 +246,9 @@
           <action name="Unshade"/>
         </finalactions>
       </action>
-    </keybind> -->
+    </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <!-- <keybind key="W-S-Right">
+    <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
@@ -547,9 +267,9 @@
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
-    </keybind> -->
+    </keybind>
     <!-- Keybindings for running applications -->
-    <!-- <keybind key="W-e">
+    <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -557,7 +277,13 @@
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
       </action>
-    </keybind> -->
+    </keybind>
+    <!-- Launch scrot when Print is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -572,68 +298,66 @@
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
        switching due to hitting the edge of the screen -->
     <context name="Frame">
-      <mousebind button="A-Left" action="Press">
+      <mousebind button="W-Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-      <mousebind button="A-Left" action="Click">
+      <mousebind button="W-Left" action="Click">
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
+      <mousebind button="W-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
-      <mousebind button="A-Right" action="Press">
+      <mousebind button="W-Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="W-Right" action="Drag">
         <action name="Resize"/>
       </mousebind>
-      <mousebind button="A-Middle" action="Press">
+      <mousebind button="W-Middle" action="Press">
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
-      <!--
-      <mousebind button="A-Up" action="Click">
+      <mousebind button="W-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="A-Down" action="Click">
+      <mousebind button="W-Down" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
       </mousebind>
-      <mousebind button="C-A-Up" action="Click">
+      <mousebind button="W-A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="C-A-Down" action="Click">
+      <mousebind button="W-A-Down" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
       </mousebind>
-      <mousebind button="A-S-Up" action="Click">
+      <mousebind button="W-S-Up" action="Click">
         <action name="SendToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="A-S-Down" action="Click">
+      <mousebind button="W-S-Down" action="Click">
         <action name="SendToDesktop">
           <to>next</to>
         </action>
       </mousebind>
-      -->
     </context>
     <context name="Titlebar">
       <mousebind button="Left" action="Drag">
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximizeFull"/>
+        <action name="ToggleMaximize"/>
       </mousebind>
       <mousebind button="Up" action="Click">
         <action name="if">
@@ -899,6 +623,8 @@
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
+    <!-- system menu files on Debian systems -->
+    <file>/var/lib/openbox/debian-menu.xml</file>
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
@@ -1015,11 +741,5 @@
 
   # end of the example
 -->
-    <application class="oblogout">
-      <position force="yes">
-        <monitor>1</monitor>
-      </position>
-      <fullscreen>yes</fullscreen>
-    </application>
   </applications>
 </openbox_config>
