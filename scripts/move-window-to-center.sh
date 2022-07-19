@@ -1,12 +1,20 @@
 #!/bin/bash
 
-IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1)
+monitor=("$(get-current-window-monitor.sh)")
+text=$(xrandr | grep -w $monitor)
+w=$(sed -r 's/.+\ (([0-9]+)x([0-9]+)\+([0-9]+)\+([0-9]+)).*$/\2/' <<< $text)
+h=$(sed -r 's/.+\ (([0-9]+)x([0-9]+)\+([0-9]+)\+([0-9]+)).*$/\3/' <<< $text)
+x=$(sed -r 's/.+\ (([0-9]+)x([0-9]+)\+([0-9]+)\+([0-9]+)).*$/\4/' <<< $text)
+y=$(sed -r 's/.+\ (([0-9]+)x([0-9]+)\+([0-9]+)\+([0-9]+)).*$/\5/' <<< $text)
 
 width=$(xdotool getactivewindow getwindowgeometry --shell | head -4 | tail -1 | sed 's/[^0-9]*//')
 height=$(xdotool getactivewindow getwindowgeometry --shell | head -5 | tail -1 | sed 's/[^0-9]*//')
 
-newPosX=$((screenWidth/3*2-width/2))
-newPosY=$((screenHeight/10*3-height/2))
+newPosX=$((x+width/2))
+newPosY=$((y+height/2))
 
 xdotool getactivewindow windowmove "$newPosX" "$newPosY"
 
+# echo $w $h $x $y
+# echo $width $height
+# echo $newPosX $newPosY
