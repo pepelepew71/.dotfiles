@@ -57,7 +57,7 @@
     m:0x50 + c:11
     Super_L + 2
 
-"(gedit --new-window)"
+"(mousepad)"
     m:0x50 + c:12
     Super_L + 3
 
@@ -150,16 +150,12 @@
     Super_L + KP_Begin
 
 # ------
-# xfce
+# obconf
 # ------
 
-"xfce4-settings-manager"
+"obconf"
     m:0x50 + c:39
-    Super_L + s
-
-"/usr/bin/xfce4-popup-applicationsmenu"
-    m:0x50 + c:65
-    Super_L + space
+    Mod2+Mod4 + s
 
 ##################################
 # End of xbindkeys configuration #

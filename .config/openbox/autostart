@@ -1,8 +1,6 @@
 /home/ych/.screenlayout/default.sh &
-(sleep 2s && tint2 -c /home/ych/.config/tint2/tint2rc) &
 (sleep 2s && compton --config /home/ych/.config/picom/picom.conf) &
 (sleep 2s && nitrogen --restore) &
-(sleep 2s && ibus-daemon -xrd) &
+(sleep 2s && volumeicon) &
 (sleep 2s && nm-applet) &
-(sleep 2s && redshift) &
-(sleep 2s && flameshot) &
+(sleep 2s && thunar --daemon) &

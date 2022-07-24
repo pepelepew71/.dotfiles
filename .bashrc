@@ -137,5 +137,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export PATH=$PATH:/home/ych/scripts
 
 # alias
-alias nala='sudo nala update && sudo nala upgrade'
 alias btop='bpytop'
