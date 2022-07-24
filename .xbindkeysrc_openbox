@@ -125,6 +125,14 @@
     m:0x40 + c:24
     Super_L + q
 
+"/home/ych/scripts/move-window-to-left-workspace.sh"
+    m:0x1d + c:113
+    Control + Shift + Alt + Left
+
+"/home/ych/scripts/move-window-to-right-workspace.sh"
+    m:0x1d + c:114
+    Control + Shift + Alt + Right
+
 "/home/ych/scripts/goto-left-workspace.sh"
     m:0x1c + c:113
     Control + Alt + Left
