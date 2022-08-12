@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Netron
+Exec=/home/ych/scripts/netron.sh
+Icon=atom
+NoDisplay=false
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Development;
