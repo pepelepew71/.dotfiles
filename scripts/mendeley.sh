@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/home/ych/bin/mendeley-reference-manager*
+/home/ych/.local/bin/mendeley-reference-manager*
