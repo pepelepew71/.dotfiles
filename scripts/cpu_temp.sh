@@ -1,2 +1,5 @@
 #!/bin/bash
-sensors k10temp-pci-00c3 | grep 'Tctl' | cut -c16-22
+
+temp=$(sensors | grep -i Tctl: | head -n1 | sed -r 's/.*:\s+[\+-]?(.*)°C\s+.*/\1/')
+
+printf 'CPU %s°C' "$temp"
