@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Obsidian
+Exec=flatpak run md.obsidian.Obsidian
+Icon=atom
+NoDisplay=false
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;
