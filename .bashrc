@@ -133,8 +133,13 @@ eval "$(pyenv virtualenv-init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # path
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-export PATH=$PATH:/home/ych/scripts
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+export PATH=$PATH:/home/ych/scripts:/usr/local/lib:/home/ych/.local/bin/node-v18.12.0-linux-x64/bin
 
 # alias
 alias btop='bpytop'
+alias nala='sudo nala update && sudo nala upgrade'
+
+# ros2
+#source /opt/ros/foxy/setup.bash
+#source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash

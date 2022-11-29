@@ -77,11 +77,11 @@
     m:0x10 + c:148
     XF86Calculator
 
-"flameshot gui"
+"flatpak run org.flameshot.Flameshot gui"
     m:0x14 + c:107
     Control + Print
 
-"flameshot screen -n 0 -p /home/ych/Pictures"
+"flatpak run org.flameshot.Flameshot screen -n 0 -p /home/ych/Pictures"
     m:0x10 + c:107
     Print
 
@@ -124,14 +124,6 @@
 "(wmctrl -c :ACTIVE:)"
     m:0x40 + c:24
     Super_L + q
-
-"/home/ych/scripts/goto-left-workspace.sh"
-    m:0x1c + c:113
-    Control + Alt + Left
-
-"/home/ych/scripts/goto-right-workspace.sh"
-    m:0x1c + c:114
-    Control + Alt + Right
 
 "/home/ych/scripts/toggle-window-maximize.sh"
     m:0x50 + c:111
