@@ -1,0 +1,16 @@
+{
+  "readableLineLength": false,
+  "trashOption": "none",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "",
+  "attachmentFolderPath": "Attachments",
+  "livePreview": false,
+  "foldHeading": true,
+  "showFrontmatter": false,
+  "showLineNumber": true,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "showInlineTitle": false,
+  "promptDelete": false
+}

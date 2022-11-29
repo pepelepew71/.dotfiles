@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Obsidian
-Exec=obsidian
+Name=FreeCAD
+Exec=/home/ych/scripts/freecad.sh
 Icon=atom
 NoDisplay=false
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=Settings;
+Categories=Development;

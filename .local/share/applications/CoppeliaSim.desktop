@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CoppeliaSim
+Exec=/home/ych/.local/bin/CoppeliaSim_Edu_V4_4_0_rev0_Ubuntu20_04/coppeliaSim.sh
+Comment=
+Terminal=false
+Icon=/home/ych/.local/share/icons/candy-icons/apps/scalable/steam.svg
+Type=Application
