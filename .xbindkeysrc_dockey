@@ -1,0 +1,166 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 1.8.6
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+# Examples of commands:
+# ------
+# apps
+# ------
+
+"xbindkeys_show"
+  control+shift + q
+
+"google-chrome-stable"
+    m:0x50 + c:10
+    Super_L + 1
+
+"google-chrome-stable --incognito"
+    m:0x51 + c:10
+    Super_L+Shift + 1
+
+"thunar"
+    m:0x50 + c:11
+    Super_L + 2
+
+"(gedit --new-window)"
+    m:0x50 + c:12
+    Super_L + 3
+
+"/home/ych/scripts/lof_youtube.sh"
+    m:0x50 + c:16
+    Super_L + 7
+
+"/home/ych/scripts/lof_work.sh"
+    m:0x50 + c:17
+    Super_L + 8
+
+"/home/ych/scripts/lof_chat.sh"
+    m:0x50 + c:18
+    Super_L + 9
+
+"galculator"
+    m:0x10 + c:148
+    XF86Calculator
+
+"flatpak run org.flameshot.Flameshot gui"
+    m:0x14 + c:107
+    Control + Print
+
+"flatpak run org.flameshot.Flameshot gui screen -n 0 -p /home/ych/Pictures"
+    m:0x10 + c:107
+    Print
+
+# ------
+# terminal
+# ------
+
+"xfce4-terminal"
+    m:0x1c + c:28
+    Control+Alt + t
+
+"xfce4-terminal"
+    m:0x50 + c:36
+    Super_L + Return
+
+"xfce4-terminal"
+    m:0x50 + c:104
+    Super_L + KP_Enter
+
+# ------
+# window & workspace control
+# ------
+
+# "(wmctrl -s 0)"
+#     m:0x18 + c:10
+#     Alt + 1
+
+# "(wmctrl -s 1)"
+#     m:0x18 + c:11
+#     Alt + 2
+
+# "(wmctrl -s 2)"
+#     m:0x18 + c:12
+#     Alt + 3
+
+# "(wmctrl -s 3)"
+#     m:0x18 + c:13
+#     Alt + 4
+
+"(wmctrl -c :ACTIVE:)"
+    m:0x40 + c:24
+    Super_L + q
+
+# "/home/ych/scripts/goto-left-workspace.sh"
+#     m:0x1c + c:113
+#     Control + Alt + Left
+
+# "/home/ych/scripts/goto-right-workspace.sh"
+#     m:0x1c + c:114
+#     Control + Alt + Right
+
+# "/home/ych/scripts/toggle-window-maximize.sh"
+#     m:0x50 + c:111
+#     Super_L + Up
+
+# "/home/ych/scripts/hide-window.sh"
+#     m:0x50 + c:116
+#     Super_L + Down
+
+"/home/ych/scripts/move-window-to-next-monitor.sh"
+    m:0x50 + c:110
+    Super_L + Home
+
+"/home/ych/scripts/move-window-to-center.sh"
+    m:0x50 + c:84
+    Super_L + KP_Begin
+
+# ------
+# xfce
+# ------
+
+"xfce4-settings-manager"
+    m:0x50 + c:39
+    Super_L + s
+
+"/usr/bin/xfce4-popup-applicationsmenu"
+    m:0x50 + c:65
+    Super_L + space
+
+##################################
+# End of xbindkeys configuration #
+##################################

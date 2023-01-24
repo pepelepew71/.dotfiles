@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "01122a8e743763a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e95e12ac9ec2300",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54c9547a55f0677d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fleeting/Locomotion.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f3a62c3de6b6246",
+    "type": "split",
+    "children": [
+      {
+        "id": "5904e78265fc588d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "456d708551e55992",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f986bad15eb6f643",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#kinematics",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "12326953018b6d12",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 321.5
+  },
+  "right": {
+    "id": "cab0b1ac904faace",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f501a9304e8d3a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3297bc6715094de0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Fleeting/Locomotion.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31035394c470dd9d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Fleeting/Locomotion.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3f1c59de4f075a80",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6ae4f15a6afa6eac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Fleeting/Locomotion.md"
+              }
+            }
+          },
+          {
+            "id": "3316a898c60c3414",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 337.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "54c9547a55f0677d",
+  "lastOpenFiles": [
+    "Fleeting/Path Planning.md",
+    "Inbox/Trajectory Planning.md",
+    "Inbox/Trajectory Generation.md",
+    "Inbox/Local Planning.md",
+    "Inbox/Global Planning.md",
+    "Inbox/Motion Planning.md",
+    "Indexing/推導 GBM Kinematics 的問題.md",
+    "Inbox/Yuan, DSTTMR.md",
+    "Inbox/廣義自行車模型的運動學.md",
+    "Fleeting/Locomotion.md"
+  ]
+}

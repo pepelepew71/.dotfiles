@@ -46,112 +46,120 @@
   control+shift + q
 
 "google-chrome-stable"
-    m:0x50 + c:10
-    Super_L + 1
+    m:0x18 + c:10
+    Alt+Mod2 + 1
 
 "google-chrome-stable --incognito"
-    m:0x51 + c:10
-    Super_L+Shift + 1
+    m:0x19 + c:10
+    Shift+Alt+Mod2 + 1
 
 "thunar"
-    m:0x50 + c:11
-    Super_L + 2
+    m:0x18 + c:11
+    Alt+Mod2 + 2
 
 "(gedit --new-window)"
-    m:0x50 + c:12
-    Super_L + 3
+    m:0x18 + c:12
+    Alt+Mod2 + 3
 
 "/home/ych/scripts/lof_youtube.sh"
-    m:0x50 + c:16
-    Super_L + 7
+    m:0x18 + c:16
+    Alt+Mod2 + 7
 
 "/home/ych/scripts/lof_work.sh"
-    m:0x50 + c:17
-    Super_L + 8
+    m:0x18 + c:17
+    Alt+Mod2 + 8
 
 "/home/ych/scripts/lof_chat.sh"
-    m:0x50 + c:18
-    Super_L + 9
+    m:0x18 + c:18
+    Alt+Mod2 + 9
 
-"galculator"
-    m:0x10 + c:148
-    XF86Calculator
+# "galculator"
+#     m:0x10 + c:148
+#     XF86Calculator
 
 "flatpak run org.flameshot.Flameshot gui"
-    m:0x14 + c:107
-    Control + Print
+    m:0x50 + c:119
+    Mod2+Mod4 + Delete
 
-"flatpak run org.flameshot.Flameshot screen -n 0 -p /home/ych/Pictures"
-    m:0x10 + c:107
-    Print
+"flatpak run org.flameshot.Flameshot gui screen -n 0 -p /home/ych/Pictures"
+    m:0x50 + c:118
+    Mod2+Mod4 + Insert
 
 # ------
 # terminal
 # ------
 
 "xfce4-terminal"
-    m:0x1c + c:28
-    Control+Alt + t
+    m:0x54 + c:28
+    Control+Mod2+Mod4 + t
 
 "xfce4-terminal"
-    m:0x50 + c:36
-    Super_L + Return
+    m:0x18 + c:36
+    Alt+Mod2 + Return
 
-"xfce4-terminal"
-    m:0x50 + c:104
-    Super_L + KP_Enter
+# "xfce4-terminal"
+#     m:0x50 + c:104
+#     Alt_L + KP_Enter
 
 # ------
 # window & workspace control
 # ------
 
-"(wmctrl -s 0)"
-    m:0x18 + c:10
-    Alt + 1
+# "(wmctrl -s 0)"
+#     m:0x50 + c:10
+#     Mod2+Mod4 + 1
 
-"(wmctrl -s 1)"
-    m:0x18 + c:11
-    Alt + 2
+# "(wmctrl -s 1)"
+#     m:0x50 + c:11
+#     Mod2+Mod4 + 2
 
-"(wmctrl -s 2)"
-    m:0x18 + c:12
-    Alt + 3
+# "(wmctrl -s 2)"
+#     m:0x50 + c:12
+#     Mod2+Mod4 + 2
 
-"(wmctrl -s 3)"
-    m:0x18 + c:13
-    Alt + 4
+# "(wmctrl -s 3)"
+#     m:0x50 + c:13
+#     Mod2+Mod4 + 3
 
-"(wmctrl -c :ACTIVE:)"
-    m:0x40 + c:24
-    Super_L + q
+# "(wmctrl -c :ACTIVE:)"
+#     m:0x18 + c:24
+#     Alt+Mod2 + q
 
-"/home/ych/scripts/toggle-window-maximize.sh"
-    m:0x50 + c:111
-    Super_L + Up
+# "/home/ych/scripts/goto-left-workspace.sh"
+#     m:0x54 + c:113
+#     Control+Mod2+Mod4 + Left
 
-"/home/ych/scripts/hide-window.sh"
-    m:0x50 + c:116
-    Super_L + Down
+# "/home/ych/scripts/goto-right-workspace.sh"
+#     m:0x54 + c:114
+#     Control+Mod2+Mod4 + Right
 
-"/home/ych/scripts/move-window-to-next-monitor.sh"
-    m:0x50 + c:110
-    Super_L + Home
+# "/home/ych/scripts/toggle-window-maximize.sh"
+#     m:0x18 + c:111
+#     Alt+Mod2 + Up
 
-"/home/ych/scripts/move-window-to-center.sh"
-    m:0x50 + c:84
-    Super_L + KP_Begin
+# "/home/ych/scripts/hide-window.sh"
+#     m:0x18 + c:116
+#     Alt+Mod2 + Down
+
+# "/home/ych/scripts/move-window-to-next-monitor.sh"
+#     m:0x18 + c:110
+#     Alt+Mod2 + Home
+
+# "/home/ych/scripts/move-window-to-center.sh"
+#     m:0x50 + c:84
+#     Alt + KP_Begin
 
 # ------
 # xfce
 # ------
 
 "xfce4-settings-manager"
-    m:0x50 + c:39
-    Super_L + s
+    m:0x18 + c:39
+    Alt+Mod2 + s
 
-"/usr/bin/xfce4-popup-applicationsmenu"
-    m:0x50 + c:65
-    Super_L + space
+# "/usr/bin/xfce4-popup-applicationsmenu"
+#     m:0x50 + c:65
+#     Alt + space
 
 ##################################
 # End of xbindkeys configuration #
