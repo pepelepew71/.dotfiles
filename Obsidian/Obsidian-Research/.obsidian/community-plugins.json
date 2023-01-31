@@ -1,5 +1,6 @@
 [
   "obsidian-admonition",
   "obsidian-git",
-  "obsidian-graphviz"
+  "obsidian-graphviz",
+  "obsidian-plantuml"
 ]

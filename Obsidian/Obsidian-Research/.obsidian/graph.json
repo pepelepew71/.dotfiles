@@ -8,30 +8,37 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Indexing",
+      "query": "path: Linking",
       "color": {
         "a": 1,
-        "rgb": 16776960
+        "rgb": 65280
       }
     },
     {
-      "query": "path:Fleeting",
+      "query": "path:\"My Notes\"",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:\"Not Finished Yet\"",
+      "color": {
+        "a": 1,
+        "rgb": 255
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.388020833333333,
-  "repelStrength": 7.96875,
+  "centerStrength": 0.283854166666667,
+  "repelStrength": 10.0520833333333,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.932838182237287,
+  "scale": 0.6520171740799392,
   "close": true
 }

@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "a46a3f7b8350f894",
+    "type": "split",
+    "children": [
+      {
+        "id": "645f897403a9e6b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2af4c8bf984e336",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d54c178843a88d41",
+    "type": "split",
+    "children": [
+      {
+        "id": "20665457e35fc292",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc114e1d8be1a778",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "180ab8d8b0fecd53",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#not-finished",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e934d354c1867ac9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 368.5
+  },
+  "right": {
+    "id": "867493bee73c87a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e61db705e323ead",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fe7e6ec04badeef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5c5cfdd3049c14b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "46ae345ccbbaa5f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e33fac278f57e360",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "a1888eccb9b0f591",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 348.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:Create new canvas": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "c2af4c8bf984e336",
+  "lastOpenFiles": [
+    "Inbox/廣義自行車模型的運動學.md",
+    "Generalized Bicycle Model.md",
+    "Inbox/Global Planning.md",
+    "Indexing/推導 GBM Kinematics 的問題.md",
+    "Inbox/Yuan, DSTTMR.md",
+    "Inbox/Trajectory Planning.md",
+    "Inbox/Trajectory Generation.md",
+    "Inbox/Motion Planning.md",
+    "Inbox/Local Planning.md",
+    "Inbox/Holonomic.md"
+  ]
+}
