@@ -4,15 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "645f897403a9e6b6",
+        "id": "a8faf328a02ec251",
         "type": "tabs",
         "children": [
           {
-            "id": "c2af4c8bf984e336",
+            "id": "6a514e4b3154f7e3",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
+            }
+          },
+          {
+            "id": "cc05074b33ea5361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My Notes/OCMID 系統.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -44,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#not-finished",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5
+    "width": 314.5
   },
   "right": {
     "id": "867493bee73c87a4",
@@ -114,7 +126,7 @@
             }
           },
           {
-            "id": "e33fac278f57e360",
+            "id": "d393285b79249bc8",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -122,7 +134,7 @@
             }
           },
           {
-            "id": "a1888eccb9b0f591",
+            "id": "60b6b496404bd79c",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -145,17 +157,17 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "c2af4c8bf984e336",
+  "active": "6a514e4b3154f7e3",
   "lastOpenFiles": [
-    "Inbox/廣義自行車模型的運動學.md",
-    "Generalized Bicycle Model.md",
-    "Inbox/Global Planning.md",
-    "Indexing/推導 GBM Kinematics 的問題.md",
-    "Inbox/Yuan, DSTTMR.md",
-    "Inbox/Trajectory Planning.md",
-    "Inbox/Trajectory Generation.md",
-    "Inbox/Motion Planning.md",
-    "Inbox/Local Planning.md",
-    "Inbox/Holonomic.md"
+    "My Notes/OCMID 系統.md",
+    "My Notes/台達專案.md",
+    "Reference/Yuan, DSTTMR.md",
+    "Linking/Generalized Bicycle Model.md",
+    "Not Finished Yet/move_base.md",
+    "Not Finished Yet/Path Planning.md",
+    "Reference/Locomotion.md",
+    "Not Finished Yet/Global Planning.md",
+    "Reference/Kinematics of GBM.md",
+    "Reference/Kinematics.md"
   ]
 }
