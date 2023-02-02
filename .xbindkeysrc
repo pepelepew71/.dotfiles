@@ -47,43 +47,45 @@
 
 "google-chrome-stable"
     m:0x50 + c:10
-    Super_L + 1
+    Mod2+Mod4 + 1
 
 "google-chrome-stable --incognito"
     m:0x51 + c:10
-    Super_L+Shift + 1
+    Shift+Mod2+Mod4 + 1
 
 "thunar"
     m:0x50 + c:11
-    Super_L + 2
+    Mod2+Mod4 + 2
 
 "(gedit --new-window)"
     m:0x50 + c:12
-    Super_L + 3
+    Mod2+Mod4 + 3
 
 "/home/ych/scripts/lof_youtube.sh"
     m:0x50 + c:16
-    Super_L + 7
+    Mod2+Mod4 + 7
 
 "/home/ych/scripts/lof_work.sh"
     m:0x50 + c:17
-    Super_L + 8
+    Mod2+Mod4 + 8
 
 "/home/ych/scripts/lof_chat.sh"
     m:0x50 + c:18
-    Super_L + 9
+    Mod2+Mod4 + 9
 
 "galculator"
-    m:0x10 + c:148
-    XF86Calculator
+    m:0x50 + c:54
+    Mod2+Mod4 + c
+    # m:0x10 + c:148
+    # XF86Calculator
 
 "flatpak run org.flameshot.Flameshot gui"
-    m:0x14 + c:107
-    Control + Print
+    m:0x50 + c:21
+    Mod2+Mod4 + equal
 
 "flatpak run org.flameshot.Flameshot gui screen -n 0 -p /home/ych/Pictures"
-    m:0x10 + c:107
-    Print
+    m:0x50 + c:20
+    Mod2+Mod4 + minus
 
 # ------
 # terminal
@@ -91,15 +93,15 @@
 
 "xfce4-terminal"
     m:0x1c + c:28
-    Control+Alt + t
+    Control+Alt+Mod2 + t
 
 "xfce4-terminal"
     m:0x50 + c:36
-    Super_L + Return
+    Mod2+Mod4 + Return
 
-"xfce4-terminal"
-    m:0x50 + c:104
-    Super_L + KP_Enter
+# "xfce4-terminal"
+#     m:0x50 + c:104
+#     Super_L + KP_Enter
 
 # ------
 # window & workspace control
@@ -121,9 +123,9 @@
 #     m:0x18 + c:13
 #     Alt + 4
 
-"(wmctrl -c :ACTIVE:)"
-    m:0x40 + c:24
-    Super_L + q
+# "(wmctrl -c :ACTIVE:)"
+#     m:0x40 + c:24
+#     Super_L + q
 
 # "/home/ych/scripts/goto-left-workspace.sh"
 #     m:0x1c + c:113
@@ -142,12 +144,12 @@
 #     Super_L + Down
 
 "/home/ych/scripts/move-window-to-next-monitor.sh"
-    m:0x50 + c:110
-    Super_L + Home
+    m:0x50 + c:35
+    Mod2+Mod4 + bracketright
 
 "/home/ych/scripts/move-window-to-center.sh"
-    m:0x50 + c:84
-    Super_L + KP_Begin
+    m:0x50 + c:34
+    Mod2+Mod4 + bracketleft
 
 # ------
 # xfce
@@ -155,11 +157,11 @@
 
 "xfce4-settings-manager"
     m:0x50 + c:39
-    Super_L + s
+    Mod2+Mod4 + s
 
 "/usr/bin/xfce4-popup-applicationsmenu"
     m:0x50 + c:65
-    Super_L + space
+    Mod2+Mod4 + space
 
 ##################################
 # End of xbindkeys configuration #
