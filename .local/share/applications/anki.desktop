@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Anki
+Exec=anki
+Icon=atom
+NoDisplay=false
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;
