@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo mount 10.0.0.101:/volume1/Videos ~/Videos/nas
+sudo mount -t nfs 192.168.1.141:/volume1/Videos ~/Videos/nas

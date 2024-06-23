@@ -36,17 +36,19 @@ set splitright
 "# format
 set foldmethod=indent
 set foldlevel=99
-set tabstop=4
-set expandtab
-set softtabstop=4
 syntax on
 
 "## indent
 set autoindent
 set smartindent
 set cindent
+
+"## tab
 set shiftwidth=4
 set indentexpr=
+set tabstop=4
+set softtabstop=4
+set expandtab
 
 "# keymap
 let mapleader=" "

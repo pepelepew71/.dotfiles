@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=FreeCAD
-Exec=/home/ych/scripts/freecad.sh
-Icon=atom
-NoDisplay=false
-Terminal=false
-Type=Application
-StartupNotify=true
-Categories=Development;

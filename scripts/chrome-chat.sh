@@ -2,5 +2,7 @@
 
 google-chrome-stable --new-window --app \
     https://www.messenger.com/ \
-    https://app.slack.com/client \
-    chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html
+    chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html \
+    https://www.instagram.com/direct/inbox/
+
+#    https://app.slack.com/client \

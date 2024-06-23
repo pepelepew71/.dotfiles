@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Zotero
-Exec=/home/ych/scripts/zotero.sh
+Name=Postman
+Exec=/home/ych/.local/bin/Postman/Postman
 Icon=atom
 NoDisplay=false
 Terminal=false

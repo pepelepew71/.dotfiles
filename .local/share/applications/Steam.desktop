@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Steam
-Exec=flatpak run com.valvesoftware.Steam
-Comment=
-Terminal=false
-Icon=/home/ych/.local/share/icons/candy-icons/apps/scalable/steam.svg
-Type=Application

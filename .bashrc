@@ -116,13 +116,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# starship
-eval "$(starship init bash)"
-
 # ibus-chewing
 export QT_IM_MODULE=ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS="@im=ibus"
+
+# starship
+eval "$(starship init bash)"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -134,12 +134,15 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
-export PATH=$PATH:/home/ych/scripts:/usr/local/lib:/home/ych/.local/bin/node-v18.12.0-linux-x64/bin
+export PATH=$PATH:$HOME/scripts:/usr/local/lib:$HOME/.local/bin:$HOME/.local/bin/node-v21.6.2-linux-x64/bin
 
-# alias
-alias btop='bpytop'
-alias nala='sudo nala update && sudo nala upgrade'
+# Qt6
+export DISABLE_QT5_COMPAT=1
 
-# ros2
-#source /opt/ros/foxy/setup.bash
-#source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+# python
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+
+# vscode
+export PYDEVD_CONTAINER_RANDOM_ACCESS_MAX_ITEMS=1000
+
