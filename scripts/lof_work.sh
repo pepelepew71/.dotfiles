@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
 keywords=("日曆" "Trello" "Keep" "Gmail")
 
 for keyword in ${keywords[@]}; do
@@ -11,4 +13,4 @@ for keyword in ${keywords[@]}; do
 done
 
 wmctrl -s 3
-/home/ych/scripts/chrome-work.sh &
+$BASE_DIR/chrome-work.sh &

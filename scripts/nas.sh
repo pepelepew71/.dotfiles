@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo mount -t nfs 192.168.1.141:/volume1/Videos ~/Videos/nas
+sudo mount -t nfs $NAS_IP:$NAS_PATH $NAS_MOUNT_PATH
